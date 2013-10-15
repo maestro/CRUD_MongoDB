@@ -36,7 +36,7 @@ endforeach;
 }
 if($accion == 'agregar') // Si la accion es agregar
 {
-	if(isset($_POST['submit'])) //Si hace post de editar
+	if(isset($_POST['submit'])) //Si hace post de agregar
 	{		
 		$estu = array(
 		'nombre'=>$_POST['nombre'],
@@ -54,15 +54,15 @@ if($accion == 'agregar') // Si la accion es agregar
 <table>
 <tr>
     <td width="80px">Nombre:</td>
-    <td><input type="text" id="nombre" name="nombre" value="<?php echo $nombre ?>" /></td>
+    <td><input type="text" id="nombre" name="nombre" /></td>
 </tr>
 <tr>
     <td width="80px">Apellido:</td>
-    <td><input type="text" id="apellido" name="apellido"  value="<?php echo $apellido ?>" /></td>
+    <td><input type="text" id="apellido" name="apellido" /></td>
 </tr>
 <tr>
     <td width="80px">Edad:</td>
-    <td><input type="text" id="edad" name="edad" value="<?php echo $edad ?>"/></td>
+    <td><input type="text" id="edad" name="edad" /></td>
 </tr>
 </table>
 <br />
